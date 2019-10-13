@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9x5-5w-QvT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flat Question View Controller-->
+        <scene sceneID="WS5-qt-NOe">
+            <objects>
+                <viewController id="9x5-5w-QvT" customClass="FlatQuestionViewController" customModule="Gus2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uXd-dH-Z7w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="uTU-S1-TPf" customClass="EarthView" customModule="Gus2" customModuleProvider="target">
+                                <rect key="frame" x="87" y="134" width="240" height="128"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="300" image="question_1" translatesAutoresizingMaskIntoConstraints="NO" id="bjD-M1-A31" customClass="QuestionImageView" customModule="Gus2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="562" width="414" height="300"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-jh-uj6" customClass="ASD" customModule="Gus2" customModuleProvider="target">
+                                <rect key="frame" x="32" y="56" width="350" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="lS8-YW-UsQ" customClass="AnswerSelectorView" customModule="Gus2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="410" width="414" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpg-t1-d0w" customClass="AnswerCorrectView" customModule="Gus2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xGC-5C-sr7" firstAttribute="trailing" secondItem="bjD-M1-A31" secondAttribute="trailing" id="6xC-gS-bYn"/>
+                            <constraint firstItem="fpg-t1-d0w" firstAttribute="bottom" secondItem="uXd-dH-Z7w" secondAttribute="bottom" id="8c9-PA-ccb"/>
+                            <constraint firstItem="lS8-YW-UsQ" firstAttribute="leading" secondItem="xGC-5C-sr7" secondAttribute="leading" id="Cd5-3k-Hj1"/>
+                            <constraint firstItem="uTU-S1-TPf" firstAttribute="centerX" secondItem="xGC-5C-sr7" secondAttribute="centerX" id="PxE-eS-xf4"/>
+                            <constraint firstAttribute="trailing" secondItem="fpg-t1-d0w" secondAttribute="trailing" id="T1R-tb-zlQ"/>
+                            <constraint firstItem="ExG-jh-uj6" firstAttribute="leading" secondItem="xGC-5C-sr7" secondAttribute="leading" constant="32" id="URP-YN-Yqy"/>
+                            <constraint firstAttribute="top" secondItem="fpg-t1-d0w" secondAttribute="top" id="W2J-HX-8Fk"/>
+                            <constraint firstItem="uTU-S1-TPf" firstAttribute="top" secondItem="xGC-5C-sr7" secondAttribute="top" constant="90" id="eQh-mb-ueN"/>
+                            <constraint firstItem="xGC-5C-sr7" firstAttribute="trailing" secondItem="lS8-YW-UsQ" secondAttribute="trailing" id="hX3-b1-kLP"/>
+                            <constraint firstItem="bjD-M1-A31" firstAttribute="top" secondItem="lS8-YW-UsQ" secondAttribute="bottom" constant="24" id="jNq-Hf-UCw"/>
+                            <constraint firstItem="xGC-5C-sr7" firstAttribute="bottom" secondItem="bjD-M1-A31" secondAttribute="bottom" id="mad-FC-LF2"/>
+                            <constraint firstItem="ExG-jh-uj6" firstAttribute="top" secondItem="xGC-5C-sr7" secondAttribute="top" constant="12" id="pgx-AQ-fCq"/>
+                            <constraint firstItem="fpg-t1-d0w" firstAttribute="leading" secondItem="uXd-dH-Z7w" secondAttribute="leading" id="tUN-Tt-31d"/>
+                            <constraint firstItem="bjD-M1-A31" firstAttribute="leading" secondItem="xGC-5C-sr7" secondAttribute="leading" id="v2x-bd-SYP"/>
+                            <constraint firstItem="xGC-5C-sr7" firstAttribute="trailing" secondItem="ExG-jh-uj6" secondAttribute="trailing" constant="32" id="xJi-2t-S2T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xGC-5C-sr7"/>
+                    </view>
+                    <connections>
+                        <outlet property="bubleView" destination="ExG-jh-uj6" id="6AQ-HF-sKm"/>
+                        <outlet property="goalView" destination="uTU-S1-TPf" id="SbU-MC-fqH"/>
+                        <outlet property="padding" destination="jNq-Hf-UCw" id="ogQ-2b-pyq"/>
+                        <outlet property="questionImage" destination="bjD-M1-A31" id="dhC-at-Mx6"/>
+                        <outlet property="resultView" destination="fpg-t1-d0w" id="SeU-dr-2lq"/>
+                        <outlet property="selectorView" destination="lS8-YW-UsQ" id="i76-Ka-cqe"/>
+                        <segue destination="32t-Ld-yZq" kind="unwind" identifier="goBack" unwindAction="goBackWith:" id="QUN-r1-uXG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4de-vk-6rN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="32t-Ld-yZq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-986.95652173913049" y="-93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question_1" width="416" height="294"/>
+    </resources>
+</document>
